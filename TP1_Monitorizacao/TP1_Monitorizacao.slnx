@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Gateway/Gateway.csproj" Id="a200f6bb-365e-478a-8292-a4fe60aba4cc" />
+  <Project Path="Sensor/Sensor.csproj" Id="e325e0ad-4c21-4f14-9e39-03b9b2fbe60b" />
+  <Project Path="Servidor/Servidor.csproj" />
+</Solution>
