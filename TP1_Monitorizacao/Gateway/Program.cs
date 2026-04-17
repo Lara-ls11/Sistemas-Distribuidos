@@ -38,8 +38,8 @@ class Program
 
         _serverForwarder.TestConnection();
 
-        Task.Run(() => CleanupThread());
-        Task.Run(() => AggregationThread());
+        new Thread(() => CleanupThread()) { IsBackground = true }.Start();
+        new Thread(() => AggregationThread()) { IsBackground = true }.Start();
 
         while (true)
         {
@@ -57,7 +57,7 @@ class Program
 
                 Console.WriteLine($"[INFO] Sensor conectado: {remoteEndPoint} (ID: {sensorId})");
 
-                Task.Run(() => HandleSensor(sensor, sensorId, remoteEndPoint));
+                new Thread(() => HandleSensor(sensor, sensorId, remoteEndPoint)) { IsBackground = true }.Start();
             }
             catch (Exception ex)
             {

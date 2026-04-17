@@ -1,0 +1,36 @@
+{
+  "gatewayId": "GW001",
+  "fileName": "GW001_11-45.json",
+  "period": {
+    "start": "2026-04-17T11:45:00Z",
+    "end": "2026-04-17T12:00:00Z"
+  },
+  "records": [
+    {
+      "sensorId": "SENSOR_001",
+      "type": "TEMP",
+      "value": 45,
+      "unit": "C",
+      "quality": "GOOD",
+      "timestamp": "2026-04-17T11:54:19.169293Z",
+      "zScore": 0,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_001",
+      "type": "HUM",
+      "value": 3,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-04-17T11:54:25.9353598Z",
+      "zScore": 0,
+      "isOutlier": false
+    }
+  ],
+  "recordCount": 2,
+  "metadata": {
+    "created": "2026-04-17T11:54:19.1805296Z",
+    "lastModified": "2026-04-17T11:54:25.9462341Z",
+    "version": "1.0"
+  }
+}

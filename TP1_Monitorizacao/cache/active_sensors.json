@@ -1,0 +1,20 @@
+{
+  "gatewayId": "GW001",
+  "lastUpdated": "2026-04-17T11:54:25.9330597Z",
+  "activeSensors": [
+    {
+      "sensorId": "SENSOR_001",
+      "ipAddress": "127.0.0.1",
+      "port": 0,
+      "capabilities": [
+        "HUM",
+        "TEMP"
+      ],
+      "lastDataTime": "2026-04-17T11:54:25.9330581Z",
+      "connected": true,
+      "connectionTime": "2026-04-17T11:51:40.8324319Z",
+      "dataCount": 2,
+      "errorCount": 0
+    }
+  ]
+}

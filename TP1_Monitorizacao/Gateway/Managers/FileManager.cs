@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Threading;
 using Gateway.Services;
 
 namespace Gateway.Managers
@@ -63,7 +64,24 @@ namespace Gateway.Managers
         private readonly string _logDir = "data/logs";
         private readonly string _gatewayId = "GW001";
         private readonly int _rotationIntervalMinutes = 15;
-        private readonly object _lockObject = new object();
+
+        private readonly Dictionary<string, Mutex> _fileMutexes = new Dictionary<string, Mutex>();
+        private readonly object _mutexDictLock = new object();
+
+        private Mutex GetFileMutex(string filePath)
+        {
+            string normalizedPath = Path.GetFullPath(filePath).ToLowerInvariant();
+            lock (_mutexDictLock)
+            {
+                if (!_fileMutexes.TryGetValue(normalizedPath, out var mutex))
+                {
+                    mutex = new Mutex();
+                    _fileMutexes[normalizedPath] = mutex;
+                }
+                return mutex;
+            }
+        }
+
         private Dictionary<string, RawDataFile> _fileCache = new Dictionary<string, RawDataFile>();
 
         public FileManager()
@@ -135,13 +153,16 @@ namespace Gateway.Managers
         /// </summary>
         public bool AppendRawRecord(SensorReading reading)
         {
-            lock (_lockObject)
+            try
             {
+                string filePath = GetCurrentDataFilePath();
+                var (periodStart, periodEnd) = GetCurrentPeriod();
+
+                var fileMutex = GetFileMutex(filePath);
+                fileMutex.WaitOne();
+
                 try
                 {
-                    string filePath = GetCurrentDataFilePath();
-                    var (periodStart, periodEnd) = GetCurrentPeriod();
-
                     // Carregar ou criar ficheiro
                     RawDataFile dataFile;
                     if (File.Exists(filePath))
@@ -163,15 +184,19 @@ namespace Gateway.Managers
 
                     // Guardar ficheiro
                     SaveRawDataFile(filePath, dataFile);
-                    
+
                     Console.WriteLine($"[DEBUG] Leitura armazenada: {reading.SensorId}/{reading.Type}={reading.Value}");
                     return true;
                 }
-                catch (Exception ex)
+                finally
                 {
-                    Console.WriteLine($"[ERROR] Falha ao armazenar leitura: {ex.Message}");
-                    return false;
+                    fileMutex.ReleaseMutex();
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[ERROR] Falha ao armazenar leitura: {ex.Message}");
+                return false;
             }
         }
 
@@ -268,7 +293,19 @@ namespace Gateway.Managers
 
                 foreach (var filePath in files)
                 {
-                    var dataFile = ReadRawDataFile(filePath);
+                    var fileMutex = GetFileMutex(filePath);
+                    fileMutex.WaitOne();
+
+                    RawDataFile dataFile;
+                    try
+                    {
+                        dataFile = ReadRawDataFile(filePath);
+                    }
+                    finally
+                    {
+                        fileMutex.ReleaseMutex();
+                    }
+
                     if (dataFile != null)
                     {
                         var dayRecords = dataFile.Records;
