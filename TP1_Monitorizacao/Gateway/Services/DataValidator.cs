@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Globalization;
+
 
 namespace Gateway.Services
 {
@@ -85,7 +87,8 @@ namespace Gateway.Services
                 return false;
             }
 
-            if (!double.TryParse(valueStr, out value))
+            // Aceitar sempre ponto como separador decimal
+            if (!double.TryParse(valueStr, NumberStyles.Any, CultureInfo.InvariantCulture, out value))
             {
                 error = $"Valor '{valueStr}' não é um número válido";
                 return false;
