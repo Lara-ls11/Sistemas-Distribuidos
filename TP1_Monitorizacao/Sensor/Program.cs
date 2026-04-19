@@ -50,8 +50,7 @@ class Program
             while (true)
             {
                 Console.WriteLine("\n1 - Enviar TEMP e HUM");
-                Console.WriteLine("2 - Pedir stream de vídeo");
-                Console.WriteLine("3 - END");
+                Console.WriteLine("2 - END");
                 Console.Write("Opção: ");
                 string op = Console.ReadLine();
 
@@ -90,11 +89,6 @@ class Program
                     continue;
                 }
                 else if (op == "2")
-                {
-                    Send(ns, "VIDEO_REQUEST");
-                    Rec(ns);
-                }
-                else if (op == "3")
                 {
                     running = false;
                     Send(ns, "END");
