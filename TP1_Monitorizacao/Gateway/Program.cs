@@ -1,28 +1,27 @@
-﻿using System;
-using System.Net;
-using System.Net.Sockets;
-using System.Text;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using System.IO;
-using Gateway.Managers;
-using Gateway.Services;
-
+﻿using System; 
+using System.Net; 
+using System.Net.Sockets; 
+using System.Text; 
+using System.Collections.Generic; 
+using System.Threading; 
+using System.Threading.Tasks; 
+using System.IO; 
+using Gateway.Managers; 
+using Gateway.Services; 
 class Program
 {
     private static SensorManager _sensorManager = new SensorManager();
-    private static FileManager _fileManager = new FileManager();
+    private static FileManager _fileManager = new FileManager(); 
     private static DatabaseManager _databaseManager = new DatabaseManager();
-    private static DataValidator _validator = new DataValidator();
-    private static DataPreprocessor _preprocessor = new DataPreprocessor();
-    private static DataAggregationService _aggregationService = new DataAggregationService();
-    private static ServerForwarderService _serverForwarder = new ServerForwarderService();
-    private static int _sensorCounter = 0;
-    private static readonly object _counterLock = new object();
+    private static DataValidator _validator = new DataValidator(); 
+    private static DataPreprocessor _preprocessor = new DataPreprocessor(); 
+    private static DataAggregationService _aggregationService = new DataAggregationService(); 
+    private static ServerForwarderService _serverForwarder = new ServerForwarderService(); 
+    private static int _sensorCounter = 0; 
+    private static readonly object _counterLock = new object(); 
 
-    private static Dictionary<string, List<string>> _sensorCapabilities = new Dictionary<string, List<string>>();
-    private static readonly object _capabilitiesLock = new object();
+    private static Dictionary<string, List<string>> _sensorCapabilities = new Dictionary<string, List<string>>(); 
+    private static readonly object _capabilitiesLock = new object(); 
 
     static void Main()
     {
@@ -31,28 +30,28 @@ class Program
         Console.WriteLine("[INFO] Gateway - Monitorização Distribuída");
         Console.WriteLine("[INFO] ========================================");
 
-        var gw = new TcpListener(IPAddress.Any, 5001);
-        gw.Start();
-        Console.WriteLine("[INFO] Gateway iniciado na porta 5001");
+        var gw = new TcpListener(IPAddress.Any, 5001);  
+        gw.Start(); 
+        Console.WriteLine("[INFO] Gateway iniciado na porta 5001"); 
         Console.WriteLine("[INFO] À espera de sensores...");
 
-        _serverForwarder.TestConnection();
+        _serverForwarder.TestConnection(); 
 
-        new Thread(() => CleanupThread()) { IsBackground = true }.Start();
-        new Thread(() => AggregationThread()) { IsBackground = true }.Start();
+        new Thread(() => CleanupThread()) { IsBackground = true }.Start(); 
+        new Thread(() => AggregationThread()) { IsBackground = true }.Start(); 
 
-        while (true)
+        while (true) 
         {
-            try
+            try 
             {
-                var sensor = gw.AcceptTcpClient();
-                var remoteEndPoint = sensor.Client.RemoteEndPoint.ToString();
+                var sensor = gw.AcceptTcpClient(); 
+                var remoteEndPoint = sensor.Client.RemoteEndPoint.ToString(); 
 
-                string sensorId;
-                lock (_counterLock)
+                string sensorId; 
+                lock (_counterLock) 
                 {
-                    _sensorCounter++;
-                    sensorId = $"SENSOR_{_sensorCounter:000}";
+                    _sensorCounter++; 
+                    sensorId = $"SENSOR_{_sensorCounter:000}"; 
                 }
 
                 Console.WriteLine($"[INFO] Sensor conectado: {remoteEndPoint} (ID: {sensorId})");
@@ -231,6 +230,7 @@ class Program
                 Console.WriteLine($"[INFO] {sensorId} finalizou conexão");
                 return "ACK_END";
             }
+            // aqui falta o heartbeat
             else
             {
                 Console.WriteLine($"[ERROR] {sensorId} enviou mensagem desconhecida: {msg}");
