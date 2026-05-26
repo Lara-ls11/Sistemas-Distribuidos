@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package preprocessing;
+
+option csharp_namespace = "Preprocessing";
+
+service PreprocessingService {
+  rpc PreprocessData (RawReading)     returns (ProcessedReading);
+  rpc ConvertFormat  (FormatRequest)  returns (FormatResponse);
+}
+
+message RawReading {
+  string sensor_id   = 1;
+  string data_type   = 2;
+  double value       = 3;
+  string unit        = 4;
+  string format      = 5;
+  string raw_payload = 6;
+}
+
+message ProcessedReading {
+  string sensor_id        = 1;
+  string data_type        = 2;
+  double normalized_value = 3;
+  string normalized_unit  = 4;
+  string quality          = 5;
+  bool   is_outlier       = 6;
+  double z_score          = 7;
+  string timestamp        = 8;
+  string status           = 9;
+  string error_message    = 10;
+}
+
+message FormatRequest {
+  string raw_data      = 1;
+  string source_format = 2;
+}
+
+message FormatResponse {
+  string normalized_json = 1;
+  bool   success         = 2;
+  string error_message   = 3;
+}

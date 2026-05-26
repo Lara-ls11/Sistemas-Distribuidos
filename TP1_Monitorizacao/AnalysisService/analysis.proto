@@ -1,0 +1,91 @@
+syntax = "proto3";
+
+package analysis;
+
+option csharp_namespace = "AnalysisService";
+
+// Serviço de análise e previsão invocado pelo Servidor via RPC
+service AnalysisService {
+  // Análise estatística de leituras de um sensor num período
+  rpc AnalyzeReadings (AnalysisRequest) returns (AnalysisResponse);
+
+  // Deteção de padrões de poluição (picos, tendências, correlações)
+  rpc DetectPatterns (PatternRequest) returns (PatternResponse);
+
+  // Previsão de risco para saúde pública com base nas leituras recentes
+  rpc PredictHealthRisk (RiskRequest) returns (RiskResponse);
+}
+
+// ── Análise estatística ────────────────────────────────────────────────────
+
+message AnalysisRequest {
+  string sensor_id   = 1;   // "" para todos os sensores
+  string data_type   = 2;   // TEMP | HUM | PM25 | NO2 | ...
+  string start_time  = 3;   // ISO 8601 UTC
+  string end_time    = 4;   // ISO 8601 UTC
+}
+
+message AnalysisResponse {
+  string sensor_id    = 1;
+  string data_type    = 2;
+  int32  count        = 3;
+  double average      = 4;
+  double minimum      = 5;
+  double maximum      = 6;
+  double std_dev      = 7;
+  double median       = 8;
+  string trend        = 9;   // STABLE | RISING | FALLING
+  string status       = 10;
+  string error_message = 11;
+}
+
+// ── Deteção de padrões ────────────────────────────────────────────────────
+
+message DataPoint {
+  string timestamp = 1;
+  double value     = 2;
+  string sensor_id = 3;
+}
+
+message PatternRequest {
+  string data_type      = 1;
+  repeated DataPoint data = 2;
+}
+
+message DetectedPattern {
+  string pattern_type  = 1;  // SPIKE | SUSTAINED_HIGH | CORRELATION | ANOMALY
+  string description   = 2;
+  double severity      = 3;  // 0.0–1.0
+  string start_time    = 4;
+  string end_time      = 5;
+}
+
+message PatternResponse {
+  repeated DetectedPattern patterns = 1;
+  string summary                    = 2;
+  string status                     = 3;
+  string error_message              = 4;
+}
+
+// ── Previsão de risco para saúde ────────────────────────────────────────────
+
+message LatestReading {
+  string sensor_id  = 1;
+  string data_type  = 2;
+  double value      = 3;
+  string unit       = 4;
+}
+
+message RiskRequest {
+  repeated LatestReading readings = 1;
+  string zone                     = 2;
+}
+
+message RiskResponse {
+  string risk_level              = 1;  // LOW | MODERATE | HIGH | CRITICAL
+  double risk_score              = 2;  // 0.0–100.0
+  repeated string recommendations = 3;
+  string summary                 = 4;
+  string status                  = 5;
+  string error_message           = 6;
+}

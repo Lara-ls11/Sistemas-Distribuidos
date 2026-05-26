@@ -1,0 +1,1556 @@
+{
+  "gatewayId": "GW001",
+  "fileName": "GW001_17-00.json",
+  "period": {
+    "start": "2026-05-26T17:00:00Z",
+    "end": "2026-05-26T17:15:00Z"
+  },
+  "records": [
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 56.28,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:00:03.6033098Z",
+      "zScore": 0,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 14.21,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:00:07.6981828Z",
+      "zScore": 0,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 34.82,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:00:11.7961822Z",
+      "zScore": 0,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 50.34,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:00:15.9169325Z",
+      "zScore": 0,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 20.74,
+      "unit": "\u00B0C",
+      "quality": "POOR",
+      "timestamp": "2026-05-26T17:00:20.0236295Z",
+      "zScore": -4.894736842105261,
+      "isOutlier": true
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 59.5,
+      "unit": "%",
+      "quality": "FAIR",
+      "timestamp": "2026-05-26T17:00:24.1220122Z",
+      "zScore": 2.2128060263653473,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 21.63,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "FAIR",
+      "timestamp": "2026-05-26T17:00:28.2238026Z",
+      "zScore": 2.619512195121953,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 41.66,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "POOR",
+      "timestamp": "2026-05-26T17:00:32.3158036Z",
+      "zScore": 8.051546391752582,
+      "isOutlier": true
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 48.99,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:00:36.4213857Z",
+      "zScore": -1.5294117647058836,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 21.13,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:00:40.5154027Z",
+      "zScore": -0.913890445290136,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 52,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:00:44.5976205Z",
+      "zScore": -1.0188525391470544,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 16.94,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:00:48.6907686Z",
+      "zScore": -0.36576008307419666,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 33.31,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:00:52.8037429Z",
+      "zScore": -0.8346845561860328,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 49.64,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:00:56.9248927Z",
+      "zScore": -0.7020477408696254,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.73,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:00.994904Z",
+      "zScore": 1.086846679727631,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 54.34,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:05.1023096Z",
+      "zScore": -0.10165918096390247,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 14.09,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:09.2095295Z",
+      "zScore": -1.3782936178196492,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 41.69,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:13.2915283Z",
+      "zScore": 1.704165545241948,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 51.26,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:17.3865102Z",
+      "zScore": 0.061780295438234836,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.52,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:21.5010283Z",
+      "zScore": 0.6358547620550894,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 57.54,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:25.6084105Z",
+      "zScore": 0.9547257877352977,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 15.38,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:29.714402Z",
+      "zScore": -0.5899082062997336,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 46.72,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "FAIR",
+      "timestamp": "2026-05-26T17:01:33.8184066Z",
+      "zScore": 2.4779617819926565,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 52.5,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:37.9152474Z",
+      "zScore": 0.5988381086486186,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 21.78,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:42.0107221Z",
+      "zScore": -0.3290732124231948,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 51.01,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:46.1000929Z",
+      "zScore": -1.3656279538930656,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 17.61,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:50.2057369Z",
+      "zScore": 0.32247132671155154,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 43.52,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:01:54.3008203Z",
+      "zScore": 0.9701678474325331,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 55.79,
+      "unit": "dB",
+      "quality": "FAIR",
+      "timestamp": "2026-05-26T17:01:58.3863667Z",
+      "zScore": 2.0657810456061942,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 21.22,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:02.5007819Z",
+      "zScore": -1.0249827484716012,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 53.41,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:06.605964Z",
+      "zScore": -0.3552924611596627,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 15.81,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:10.7240398Z",
+      "zScore": -0.43581955681655893,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 44.57,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:14.8217703Z",
+      "zScore": 1.049625253506089,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 55.27,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:18.9161596Z",
+      "zScore": 1.3009468935326631,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 20.7,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:23.0065788Z",
+      "zScore": -1.5758635569229484,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 53.67,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:27.0904633Z",
+      "zScore": -0.24148025840247822,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 20.95,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:31.1847471Z",
+      "zScore": 1.806141847835407,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 35.51,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:35.2722866Z",
+      "zScore": -0.8638724450684474,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 48.41,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:39.3846446Z",
+      "zScore": -1.5404880166601405,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.21,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:43.4639739Z",
+      "zScore": 0.5236897594049462,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 57.56,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:47.5707058Z",
+      "zScore": 1.1693773301046282,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 19.28,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:51.6586972Z",
+      "zScore": 0.806668774278276,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 45.19,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:55.7620787Z",
+      "zScore": 1.1605015602946676,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 49.58,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:02:59.8495131Z",
+      "zScore": -0.8661885316432545,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 23.48,
+      "unit": "\u00B0C",
+      "quality": "FAIR",
+      "timestamp": "2026-05-26T17:03:03.9573646Z",
+      "zScore": 2.0986102741254364,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 55.44,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:08.0812344Z",
+      "zScore": 0.2881619199767124,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 20.43,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:12.1877635Z",
+      "zScore": 1.2002450589387141,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 32.95,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:16.2761125Z",
+      "zScore": -1.397863290476002,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 52.46,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:20.3683441Z",
+      "zScore": 0.2730616055523483,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.61,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:24.4720824Z",
+      "zScore": 0.7143124903494698,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 51.27,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:28.5690055Z",
+      "zScore": -1.2725302605210567,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 21.54,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:32.6496341Z",
+      "zScore": 1.5127516980291629,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 44.71,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:36.7392714Z",
+      "zScore": 1.0295637277300096,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 55.32,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:40.8361894Z",
+      "zScore": 1.3655896196989763,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 23.06,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:44.9545235Z",
+      "zScore": 1.1865208404323015,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 57.88,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:49.0483095Z",
+      "zScore": 1.2593591621298517,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 17.43,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:53.1261271Z",
+      "zScore": -0.22027675374869304,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 44,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:03:57.2261251Z",
+      "zScore": 0.8084122240775482,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 48.17,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:01.3347305Z",
+      "zScore": -1.4706457206442414,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.76,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:05.4336398Z",
+      "zScore": 0.7422734398254328,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 56.71,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:09.5200721Z",
+      "zScore": 0.7243320828108274,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 21.14,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:13.6176497Z",
+      "zScore": 1.2400640990574494,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 42.16,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:17.7375344Z",
+      "zScore": 0.39868714794760646,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 54.46,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:21.7950058Z",
+      "zScore": 0.9698061525514848,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 23.3,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:25.8957434Z",
+      "zScore": 1.3256114346817145,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 59.1,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:29.9996809Z",
+      "zScore": 1.5550969106023642,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 17.6,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:34.0846486Z",
+      "zScore": -0.2298293461453637,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 40.74,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:38.2518355Z",
+      "zScore": 0.09597313346278702,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 48.43,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:42.344958Z",
+      "zScore": -1.2892552261302757,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 23.15,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:46.4194061Z",
+      "zScore": 1.041902496617068,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 58.24,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:50.4797618Z",
+      "zScore": 1.0935278771390924,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 21.94,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:54.5250676Z",
+      "zScore": 1.5063987043642657,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 45.87,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:04:58.6318552Z",
+      "zScore": 1.1620346879981034,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 51.04,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:02.7429059Z",
+      "zScore": -0.24917213735110594,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.59,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:06.8651481Z",
+      "zScore": 0.3428515750714822,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 55.23,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:10.9381409Z",
+      "zScore": -0.026991556965562435,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 17.72,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:15.0502959Z",
+      "zScore": -0.25904498853783264,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 34.43,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:19.1595024Z",
+      "zScore": -1.2846195149814383,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 51.74,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:23.2463825Z",
+      "zScore": 0.017035079261021453,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.49,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:27.3310206Z",
+      "zScore": 0.21528520673438564,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 58.63,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:31.4276802Z",
+      "zScore": 1.1943782258696587,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 15.85,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:35.5221834Z",
+      "zScore": -0.9911540978097558,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 43.48,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:39.6147546Z",
+      "zScore": 0.6514135448762961,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 50.06,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:43.7123545Z",
+      "zScore": -0.6213000498248453,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 20.68,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:47.8064757Z",
+      "zScore": -1.9521972507668852,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 55.79,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:51.9002299Z",
+      "zScore": 0.10746279104208589,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 19.27,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:05:55.9916428Z",
+      "zScore": 0.4187378491122021,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 46.21,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:00.0920608Z",
+      "zScore": 1.1906412430813853,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 51.17,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:04.1858094Z",
+      "zScore": -0.16836080586690788,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 21.71,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:08.2828417Z",
+      "zScore": -0.5809967921391802,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 60,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:12.3757302Z",
+      "zScore": 1.64209066458476,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 18.81,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:16.4362715Z",
+      "zScore": 0.21907896372676802,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 33.07,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:20.5193668Z",
+      "zScore": -1.576888766408528,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 53.5,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:24.5708584Z",
+      "zScore": 0.7608864398248739,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 23.43,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:28.6733388Z",
+      "zScore": 1.3976511428534828,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 53.98,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:32.7554528Z",
+      "zScore": -0.6150070288508253,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 16.86,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:36.8357969Z",
+      "zScore": -0.5974222627355561,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 33.36,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:40.9091915Z",
+      "zScore": -1.3919460385476703,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 53.54,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:44.9928526Z",
+      "zScore": 0.7471691348029773,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.83,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:49.0774724Z",
+      "zScore": 0.6347749296433485,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 55.87,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:53.1750802Z",
+      "zScore": 0.08028890479950619,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 21.88,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:06:57.2500786Z",
+      "zScore": 1.5424904992176964,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 42.59,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:01.3249483Z",
+      "zScore": 0.4960390620253553,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 48.67,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:05.4245768Z",
+      "zScore": -1.257229454996654,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 23.19,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:09.5253176Z",
+      "zScore": 1.0222375514268145,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 59.55,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:13.582123Z",
+      "zScore": 1.423730150162335,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 16.16,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:17.673297Z",
+      "zScore": -0.917807293776026,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 40.36,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:21.7616862Z",
+      "zScore": 0.040327255913243314,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 51.41,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:25.8740783Z",
+      "zScore": -0.08683062971216876,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 23.36,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:29.9707692Z",
+      "zScore": 1.1703102054660364,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 59.61,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:34.0459811Z",
+      "zScore": 1.3563562262131998,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 19.49,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:38.1492436Z",
+      "zScore": 0.49192859118235505,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 44.29,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:42.2439118Z",
+      "zScore": 0.8351829633254307,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 51.66,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:46.3539834Z",
+      "zScore": 0.01765946100998067,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.65,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:50.4234967Z",
+      "zScore": 0.31549592957375483,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 52.72,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:54.5064945Z",
+      "zScore": -1.1508985168128343,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 20.15,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:07:58.5965865Z",
+      "zScore": 0.7558626799869083,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 35.81,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:02.6828975Z",
+      "zScore": -0.9230380600052387,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 55.73,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:06.7739317Z",
+      "zScore": 1.7229903828263065,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 20.92,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:10.8378791Z",
+      "zScore": -1.6741031937793707,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 55.02,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:14.9081412Z",
+      "zScore": -0.29191983350877176,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 18.54,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:19.0041857Z",
+      "zScore": 0.05110835783356902,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 39.67,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:23.0908174Z",
+      "zScore": -0.09945456210756737,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 48.59,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:27.1941927Z",
+      "zScore": -1.2913184826632444,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 23.18,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:31.2794969Z",
+      "zScore": 0.9498176478675046,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 54.14,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:35.3852362Z",
+      "zScore": -0.6001442827963622,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 21.89,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:39.4803601Z",
+      "zScore": 1.4954354889183261,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 35.76,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:43.5557813Z",
+      "zScore": -0.9133339292296578,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 50.39,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:47.6526291Z",
+      "zScore": -0.5078796711474901,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.44,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:51.7217346Z",
+      "zScore": 0.09317120290162104,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 51.05,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:55.807314Z",
+      "zScore": -1.7024721467282504,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 14.09,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:08:59.9060417Z",
+      "zScore": -1.8853271646774574,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 40.42,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:09:03.98597Z",
+      "zScore": 0.09315145495269568,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 48.99,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:09:08.0805172Z",
+      "zScore": -1.0636766904601076,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 23,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:09:12.1374174Z",
+      "zScore": 0.7261582177745636,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 52.76,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:09:16.2137395Z",
+      "zScore": -0.9919819250337077,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 19.01,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:09:20.3193357Z",
+      "zScore": 0.2501307126542742,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 46.55,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:09:24.3971931Z",
+      "zScore": 1.3985343922669344,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 51.87,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:09:28.5154813Z",
+      "zScore": 0.14182818695752356,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 21.73,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:05.8325187Z",
+      "zScore": -0.7445740238720409,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 52.15,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:10.6895054Z",
+      "zScore": -1.1726314444458834,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 20.26,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:15.7095522Z",
+      "zScore": 0.7605584009473941,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 41.37,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:20.7327441Z",
+      "zScore": 0.24211734551078246,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 51.91,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:24.8238876Z",
+      "zScore": 0.15578642841977744,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 22.94,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:28.9228738Z",
+      "zScore": 0.6685545990598176,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 55.79,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:33.9402704Z",
+      "zScore": 0.1428410988047468,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 19.27,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:38.0267408Z",
+      "zScore": 0.32972405973911395,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 36.1,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:43.0415906Z",
+      "zScore": -0.8868822453010418,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 48.31,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:47.1374534Z",
+      "zScore": -1.3542280320296496,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "TEMP",
+      "value": 21.87,
+      "unit": "\u00B0C",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:51.232403Z",
+      "zScore": -0.591106288619526,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "HUM",
+      "value": 58,
+      "unit": "%",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:55.3293087Z",
+      "zScore": 0.9241646005265471,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "PM25",
+      "value": 16.27,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:12:59.409728Z",
+      "zScore": -0.939861678947137,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "NO2",
+      "value": 46.85,
+      "unit": "\u00B5g/m\u00B3",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:13:03.5078393Z",
+      "zScore": 1.441502917789517,
+      "isOutlier": false
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "type": "ACOUSTIC",
+      "value": 48.09,
+      "unit": "dB",
+      "quality": "GOOD",
+      "timestamp": "2026-05-26T17:13:07.6194545Z",
+      "zScore": -1.3854518553984099,
+      "isOutlier": false
+    }
+  ],
+  "recordCount": 154,
+  "metadata": {
+    "created": "2026-05-26T17:00:03.6040865Z",
+    "lastModified": "2026-05-26T17:13:07.6201141Z",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "gatewayId": "GW001",
+  "lastUpdated": "2026-05-26T17:13:07.6234349Z",
+  "activeSensors": [
+    {
+      "sensorId": "SENSOR_ZONA1_356",
+      "ipAddress": "rabbitmq",
+      "port": 0,
+      "capabilities": [],
+      "lastDataTime": "2026-05-26T16:30:31.0874238Z",
+      "connected": false,
+      "connectionTime": "2026-05-26T16:30:31.079998Z",
+      "dataCount": 1,
+      "errorCount": 0
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_320",
+      "ipAddress": "rabbitmq",
+      "port": 0,
+      "capabilities": [],
+      "lastDataTime": "2026-05-26T17:13:07.6234328Z",
+      "connected": true,
+      "connectionTime": "2026-05-26T17:13:07.6163665Z",
+      "dataCount": 1,
+      "errorCount": 0
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_860",
+      "ipAddress": "rabbitmq",
+      "port": 0,
+      "capabilities": [],
+      "lastDataTime": "2026-05-26T16:59:34.8621674Z",
+      "connected": true,
+      "connectionTime": "2026-05-26T16:59:34.8531821Z",
+      "dataCount": 1,
+      "errorCount": 0
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_464",
+      "ipAddress": "rabbitmq",
+      "port": 0,
+      "capabilities": [],
+      "lastDataTime": "2026-05-26T16:36:12.9172161Z",
+      "connected": false,
+      "connectionTime": "2026-05-26T16:36:12.9076337Z",
+      "dataCount": 1,
+      "errorCount": 0
+    },
+    {
+      "sensorId": "SENSOR_ZONA1_292",
+      "ipAddress": "rabbitmq",
+      "port": 0,
+      "capabilities": [],
+      "lastDataTime": "2026-05-26T16:46:57.1226934Z",
+      "connected": false,
+      "connectionTime": "2026-05-26T16:46:57.1152848Z",
+      "dataCount": 1,
+      "errorCount": 0
+    }
+  ]
+}

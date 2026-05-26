@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package preprocessing;
+
+option csharp_namespace = "PreprocessingService";
+
+// Serviço de pré-processamento invocado pelo Gateway via RPC
+service PreprocessingService {
+  // Pré-processa uma leitura bruta de sensor (normalização, qualidade, outlier)
+  rpc PreprocessData (RawReading) returns (ProcessedReading);
+
+  // Converte dados entre formatos (JSON, XML, CSV) para JSON normalizado
+  rpc ConvertFormat (FormatRequest) returns (FormatResponse);
+}
+
+// Leitura bruta recebida do Gateway
+message RawReading {
+  string sensor_id  = 1;
+  string data_type  = 2;   // TEMP, HUM, PM25, NO2, ACOUSTIC
+  double value      = 3;
+  string unit       = 4;
+  string format     = 5;   // JSON | XML | CSV (opcional)
+  string raw_payload = 6;  // payload original (opcional)
+}
+
+// Leitura processada devolvida ao Gateway
+message ProcessedReading {
+  string sensor_id         = 1;
+  string data_type         = 2;
+  double normalized_value  = 3;
+  string normalized_unit   = 4;
+  string quality           = 5;  // GOOD | FAIR | POOR
+  bool   is_outlier        = 6;
+  double z_score           = 7;
+  string timestamp         = 8;  // ISO 8601 UTC
+  string status            = 9;  // OK | ERROR
+  string error_message     = 10;
+}
+
+// Pedido de conversão de formato
+message FormatRequest {
+  string raw_data      = 1;
+  string source_format = 2;   // JSON | XML | CSV
+}
+
+// Resposta com dados normalizados em JSON
+message FormatResponse {
+  string normalized_json = 1;
+  bool   success         = 2;
+  string error_message   = 3;
+}

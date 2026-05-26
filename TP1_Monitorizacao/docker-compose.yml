@@ -1,0 +1,21 @@
+services:
+  # Broker RabbitMQ para comunicação Pub/Sub entre Sensores e Gateways
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq_tp2
+    ports:
+      - "5672:5672"    # AMQP (usado pelos sensores e gateways)
+      - "15672:15672"  # Management UI (http://localhost:15672, user: guest, pass: guest)
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  rabbitmq_data:

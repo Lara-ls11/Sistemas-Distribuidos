@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+package analysis;
+
+option csharp_namespace = "Analysis";
+
+service AnalysisService {
+  rpc AnalyzeReadings    (AnalysisRequest) returns (AnalysisResponse);
+  rpc DetectPatterns     (PatternRequest)  returns (PatternResponse);
+  rpc PredictHealthRisk  (RiskRequest)     returns (RiskResponse);
+}
+
+message AnalysisRequest {
+  string sensor_id  = 1;
+  string data_type  = 2;
+  string start_time = 3;
+  string end_time   = 4;
+}
+
+message AnalysisResponse {
+  string sensor_id     = 1;
+  string data_type     = 2;
+  int32  count         = 3;
+  double average       = 4;
+  double minimum       = 5;
+  double maximum       = 6;
+  double std_dev       = 7;
+  double median        = 8;
+  string trend         = 9;
+  string status        = 10;
+  string error_message = 11;
+}
+
+message DataPoint {
+  string timestamp = 1;
+  double value     = 2;
+  string sensor_id = 3;
+}
+
+message PatternRequest {
+  string data_type        = 1;
+  repeated DataPoint data = 2;
+}
+
+message DetectedPattern {
+  string pattern_type = 1;
+  string description  = 2;
+  double severity     = 3;
+  string start_time   = 4;
+  string end_time     = 5;
+}
+
+message PatternResponse {
+  repeated DetectedPattern patterns = 1;
+  string summary                    = 2;
+  string status                     = 3;
+  string error_message              = 4;
+}
+
+message LatestReading {
+  string sensor_id = 1;
+  string data_type = 2;
+  double value     = 3;
+  string unit      = 4;
+}
+
+message RiskRequest {
+  repeated LatestReading readings = 1;
+  string zone                     = 2;
+}
+
+message RiskResponse {
+  string risk_level               = 1;
+  double risk_score               = 2;
+  repeated string recommendations = 3;
+  string summary                  = 4;
+  string status                   = 5;
+  string error_message            = 6;
+}

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,5 +6,28 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Base de dados SQLite -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore"        Version="10.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.0" />
+
+    <!-- RPC via gRPC -->
+    <PackageReference Include="Grpc.Net.Client"                      Version="2.67.0" />
+    <PackageReference Include="Google.Protobuf"                      Version="3.29.3" />
+    <PackageReference Include="Grpc.Tools"                           Version="2.67.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Ficheiro .proto do serviço de análise -->
+    <Protobuf Include="Protos\analysis.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Copiar o dashboard HTML para a pasta de output -->
+    <Content Include="Web\dashboard.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
 </Project>
